@@ -25,7 +25,7 @@ class DocumentHandler:
             
             os.makedirs(self.session_path, exist_ok=True)
 
-            self.log.info("PDFHandler initialized", session_id=self.session_id, session_path=self.session_path)
+            self.log.info("PDF Handler initialized", session_id=self.session_id, session_path=self.session_path)
 
         except Exception as e:
             self.log.error(f"Error initializing DocumentHandler: {e}")
