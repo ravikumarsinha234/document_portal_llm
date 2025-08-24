@@ -60,9 +60,9 @@ jobs:
           docker push $IMAGE_URI
           echo "image=$IMAGE_URI" >> $GITHUB_OUTPUT
 
-  # -------------------------------
+  # ------------------------------
   # 2. Deploy to ECS
-  # -------------------------------
+  # ------------------------------
   deploy:
     name: Deploy to ECS Fargate
     needs: build-and-push
