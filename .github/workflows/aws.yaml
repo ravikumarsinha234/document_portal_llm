@@ -62,7 +62,7 @@ jobs:
 
   # -------------------------------
   # 2. Deploy to ECS
-  # -------------------------------
+  # --------------------------------
   deploy:
     name: Deploy to ECS Fargate
     needs: build-and-push
